@@ -1,0 +1,14 @@
+{
+  "name": "node-typescript-boilerplate",
+  "version": "1.0.0",
+  "description": "TS boilerplate with concurrent watch.",
+  "main": "dist/index.js",
+  "author": "Noah Damiani",
+  "license": "MIT",
+  "scripts": {
+    "watch": "concurrently \"tsc -w \" \"nodemon dist/server.js\""
+  },
+  "devDependencies": {
+    "concurrently": "^4.1.0"
+  }
+}
